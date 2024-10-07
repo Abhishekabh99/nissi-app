@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-image: url('./image/back_image.jpeg');
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start; /* Changed to flex-start to move content to the top */
+  padding-top: 20px; /* Adjust padding-top to give some space from the top */
+}
+
+.app-header {
+  margin-top: 10px; /* Adjust this value if needed */
+  text-align: center;
+  background-color: rgba(135, 206, 235, 0.7); /* Sky blue background */
+  padding: 10px; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px; /* Adjust margin-top to lift the button text upward */
+}
+
+.animated-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #001f3f; /* Text color with contrast */
+  margin-top: 0px; /* Removed margin for better positioning */
+}
+
+.nissi-button {
+  background-color: red; /* Adjust this as per your design */
+  color: white; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dialog-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close-button {
+  background-color: red; /* Adjust this as per your design */
+  color: white; /* Text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
